@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.henry.alohamusic.SplashActivity">
+
+    <ImageView
+        android:id="@+id/imgHawaii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/hawaii" />
+
+    <TextView
+        android:id="@+id/txtSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/txtSplash"
+        android:text="Sounds of Hawaii"
+        android:textColor="@android:color/black"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toStartOf="@+id/imgHawaii"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toEndOf="@+id/imgHawaii"
+        tools:layout_editor_absoluteY="431dp"
+        tools:text="@string/txtSplash"
+        tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>

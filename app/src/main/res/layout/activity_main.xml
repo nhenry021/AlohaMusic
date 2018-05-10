@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.henry.alohamusic.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgUkulele"
+            android:layout_width="320dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:contentDescription="@string/Ukulele"
+            app:srcCompat="@drawable/ukulele" />
+
+        <Button
+            android:id="@+id/btnUkulele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgUkulele"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:contentDescription="@string/btnUkulele"
+            android:text="@string/play_ukulele_song"
+            android:textSize="22sp"
+            tools:text="@string/btnUkulele" />
+
+        <ImageView
+            android:id="@+id/imgDrums"
+            android:layout_width="320dp"
+            android:layout_height="150dp"
+            android:layout_alignLeft="@+id/imgUkulele"
+            android:layout_alignStart="@+id/imgUkulele"
+            android:layout_below="@+id/btnUkulele"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/drums"
+            app:srcCompat="@drawable/drums" />
+
+        <Button
+            android:id="@+id/btnDrums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgDrums"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:contentDescription="@string/btnDrums"
+            android:text="PLAY DRUMS SONG"
+            android:textSize="22sp"
+            tools:text="@string/btnDrums" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
